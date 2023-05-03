@@ -1,6 +1,6 @@
 <script>
-  import Navbar from '../components/Navbar.svelte';
-  import "../global.css";
+	import Navbar from '../components/Navbar.svelte';
+	import '../global.css';
 </script>
 
 <Navbar />

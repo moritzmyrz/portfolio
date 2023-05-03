@@ -4,9 +4,15 @@
 @tailwind variants;
 
 html {
+	background-color: white;
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
 		Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
 		Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+	tab-size: 4;
+	-webkit-text-size-adjust: 100%;
+
+	font-feature-settings: 'rlig' 1, 'calt' 1, 'ss01' 1, 'ss06' 1;
 }
 
 * {
@@ -15,10 +21,6 @@ html {
 
 	box-sizing: border-box;
 	border: 0 solid #e5e7eb;
-}
-
-h1 {
-	font-size: 3em !important;
 }
 
 article li,
@@ -43,10 +45,6 @@ article p {
 	size-adjust: 1.5;
 }
 
-html[class~='dark'] body {
-	background-color: #000 !important;
-}
-
 @font-face {
 	font-family: Arial-Fontsized;
 	src: local('Arial');
@@ -66,12 +64,6 @@ html[class~='dark'] body {
 	--shiki-token-link: #ffab70;
 }
 
-html[class~='dark'] pre {
-	background-color: #131216 !important;
-	border: 1px solid #1f1d21;
-	font-size: 1.1em;
-}
-
 .callout > div > a {
 	text-decoration: underline;
 }
@@ -79,13 +71,6 @@ html[class~='dark'] pre {
 img,
 video {
 	border-radius: 6px;
-}
-
-@media (prefers-color-scheme: dark) {
-	body,
-	html {
-		background-color: #000 !important;
-	}
 }
 
 .card-with-img {
@@ -183,8 +168,4 @@ video {
 
 aside {
 	visibility: hidden !important;
-}
-
-button[title='Change theme'] {
-	display: none;
 }

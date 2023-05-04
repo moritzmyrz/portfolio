@@ -2,6 +2,7 @@
 	export let prosjekter: any;
 
 	import Placeholder from '$lib/assets/placeholder.jpg';
+	import { getDateRange } from '$lib/utils/getDateRange';
 	import { urlFor } from '$lib/utils/image';
 </script>
 
@@ -18,10 +19,10 @@
 			/>
 		</div>
 		<div class="flex flex-col ml-[2em] justify-around">
-			<p class="text-sm text-violet-500">{prosjekt.technologies}</p>
+			<p class="text-sm text-green-500">{prosjekt.technologies}</p>
 			<h3 class="block font-semibold text-xl">{prosjekt.title}</h3>
 			<p>{prosjekt.description}</p>
-			<p class="opacity-50 text-sm">{prosjekt.timeperiod}</p>
+			<p class="opacity-50 text-sm">{getDateRange(new Date(prosjekt.fromDate), new Date(prosjekt.toDate))}</p>
 		</div>
 	</a>
 {/each}

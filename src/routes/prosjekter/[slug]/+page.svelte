@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Placeholder from '$lib/assets/placeholder.jpg';
+	import { getDateRange } from '$lib/utils/getDateRange';
 	import { urlFor } from '$lib/utils/image';
 	import { serializeSchema } from '$lib/utils/serializeSchema';
 	import { PortableText } from '@portabletext/svelte';
@@ -35,7 +36,7 @@
 			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-indigo-200 bg-indigo-100 text-indigo-900"
 		>
 			<h2 class="font-semibold mr-1">Tidsperiode:</h2>
-			<p>{data.timeperiod}</p>
+			<p>{getDateRange(new Date(data.fromDate), new Date(data.toDate))}</p>
 		</div>
 
 		<div class="mt-6 leading-7 first:mt-0">

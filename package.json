@@ -12,6 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@portabletext/svelte": "^2.0.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
@@ -32,6 +33,9 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sanity/client": "^6.0.1",
+		"@sanity/image-url": "^1.0.2",
+		"@sanity/types": "^3.10.0",
 		"@vercel/analytics": "^1.0.1"
 	}
 }

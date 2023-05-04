@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.myrseth.dev
+
+# Sitemaps
+Sitemap: https://www.myrseth.dev/sitemap.xml

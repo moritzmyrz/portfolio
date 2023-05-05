@@ -8,12 +8,12 @@
 
 {#each prosjekter as prosjekt}
 	<a
-		class="mt-4 cursor-pointer border-solid border-[1px] border-[#eee] h-auto grid-cols-none grid md:grid-cols-[.3fr_.7fr] md:grid-rows-1 md:gap-0 md:h-[170px] p-[10px] rounded-md outline-offset-2 outline-2 outline-transparent"
+		class="mt-4 cursor-pointer border-solid border-[1px] border-[#eee] h-auto grid-cols-none grid md:grid-cols-[.3fr_.7fr] md:grid-rows-1 md:gap-0 md:h-[200px] p-[10px] rounded-md outline-offset-2 outline-2 outline-transparent"
 		href={`/prosjekter/${prosjekt.slug.current}`}
 	>
 		<div class="relative w-full h-[200px] mb-[1em] md:mb-0 md:h-auto">
 			<img
-				class="img absolute w-full inset-0 object-cover block align-middle rounded-md h-full max-h-none md:max-h-[150px] min-h-[100px] max-w-full"
+				class="img my-auto absolute w-full inset-0 object-cover block align-middle rounded-md h-full max-h-none md:max-h-[150px] min-h-[100px] max-w-full"
 				src={prosjekt.mainImage ? urlFor(prosjekt.mainImage).url() : Placeholder}
 				alt="placeholder"
 			/>

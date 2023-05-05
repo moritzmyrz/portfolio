@@ -4,13 +4,19 @@ export function getDateRange(fromDate: Date, toDate: Date): string {
 	const fromYear = fromDate.getFullYear();
 	const toYear = toDate.getFullYear();
 
+	if (!isValidDate(toDate)) {
+		return `${fromMonth} ${fromYear} - nå`;
+	}
+
 	if (fromYear === toYear && fromMonth === toMonth) {
 		return `${fromMonth} ${fromYear}`;
 	} else if (fromYear === toYear) {
 		return `${fromMonth} - ${toMonth} ${fromYear}`;
-	} else if (typeof toDate !== 'object') {
-		return `${fromMonth} ${fromYear} - nå`;
 	} else {
 		return `${fromMonth} ${fromYear} - ${toMonth} ${toYear}`;
 	}
+}
+
+function isValidDate(date: Date) {
+	return new Date(date).toString() !== 'Invalid Date';
 }

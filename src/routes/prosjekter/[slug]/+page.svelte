@@ -19,13 +19,19 @@
 			{data.description}
 		</div>
 		<img src={data.mainImage ? urlFor(data.mainImage).url() : Placeholder} alt="" />
+		{#if data.github || data.url}
 		<div
 			class="mt-6 flex rounded-lg border py-2 px-4 contrast-more:border-current border-green-200 bg-green-100 text-green-900"
 		>
 			<h2 class="font-semibold mr-1">Lenker:</h2>
+			{#if data.github}
 			<p class="mr-1"><a class="hover:underline" href={data.github}>GitHub</a></p>
+			{/if}
+			{#if data.url}
 			<p><a class="hover:underline" href={data.url}>Nettside</a></p>
+			{/if}
 		</div>
+		{/if}
 		<div
 			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-blue-200 bg-blue-100 text-blue-900"
 		>

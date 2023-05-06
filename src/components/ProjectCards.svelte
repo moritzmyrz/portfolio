@@ -1,5 +1,5 @@
-<script lang="ts">
-	export let prosjekter: any;
+<script lang='ts'>
+  export let prosjekter: any;
 
 	import Placeholder from '$lib/assets/placeholder.jpg';
 	import { getDateRange } from '$lib/utils/getDateRange';

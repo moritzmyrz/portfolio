@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Prosjekter from '../components/Prosjekter.svelte';
+	import Projects from '../components/Projects.svelte';
 
 	import type { PageData } from './$types';
 
@@ -21,7 +21,7 @@
 			<a href="/prosjekter">Prosjekter</a>
 		</h2>
 		<div class="mt-6 leading-7 first:mt-0">
-			<Prosjekter prosjekter={data.projects} />
+			<Projects projects={data.projects} />
 		</div>
 	</main>
 </div>

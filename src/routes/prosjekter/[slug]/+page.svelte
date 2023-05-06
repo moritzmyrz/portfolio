@@ -3,9 +3,10 @@
 	import { getDateRange } from '$lib/utils/getDateRange';
 	import { urlFor } from '$lib/utils/image';
 	import { serializeSchema } from '$lib/utils/serializeSchema';
-	import { PortableText } from '@portabletext/svelte';
 
 	import type { PageData } from './$types';
+
+	import PortableText from '$lib/components/PortableText/index.svelte';
 
 	export let data: PageData;
 </script>

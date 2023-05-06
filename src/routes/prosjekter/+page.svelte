@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Projects from '../../components/Projects.svelte';
+	import Projects from '$lib/components/Projects.svelte';
 
 	import type { PageData } from './$types';
 

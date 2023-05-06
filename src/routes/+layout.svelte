@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Navbar from '../components/Navbar.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
 	import '../global.css';
 
 	import { serializeSchema } from '$lib/utils/serializeSchema';

@@ -9,13 +9,13 @@
 
 {#each Object.entries(projectsByYear).reverse() as [key, value]}
 	{#if key === 'now'}
-		<h2 class="font-semibold mt-10 border-b pb-1 text-xl contrast-more:border-neutral-400">
+		<h3 class="font-semibold mt-10 border-b pb-1 text-xl contrast-more:border-neutral-400">
 			Pågående prosjekter
-		</h2>
+		</h3>
 	{:else}
-		<h2 class="font-semibold mt-10 border-b pb-1 text-xl contrast-more:border-neutral-400">
+		<h3 class="font-semibold mt-10 border-b pb-1 text-xl contrast-more:border-neutral-400">
 			{key}
-		</h2>
+		</h3>
 	{/if}
 	<ProjectCards prosjekter={value} />
 {/each}

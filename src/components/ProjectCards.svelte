@@ -20,8 +20,8 @@
 		</div>
 		<div class="flex flex-col ml-[2em] justify-around">
 			<p class="text-sm text-orange-500">{prosjekt.technologies}</p>
-			<h3 class="block font-semibold text-xl">{prosjekt.title}</h3>
-			<p>{prosjekt.description}</p>
+			<h4 class="block font-semibold text-lg">{prosjekt.title}</h4>
+			<p class="text-md">{prosjekt.description}</p>
 			<p class="opacity-50 text-sm">{getDateRange(new Date(prosjekt.fromDate), new Date(prosjekt.toDate))}</p>
 		</div>
 	</a>

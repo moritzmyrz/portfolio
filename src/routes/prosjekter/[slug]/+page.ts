@@ -6,8 +6,7 @@ export const ssr = false;
 
 export const load = (async ({ params }) => {
 	const project = await getProject(params.slug);
-	console.log(project);
 	if (project) return project;
 
-	throw error(404, 'Not found');
+	throw error(404, 'Siden finnes ikke');
 }) satisfies PageLoad;

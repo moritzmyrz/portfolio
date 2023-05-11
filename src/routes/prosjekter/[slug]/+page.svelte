@@ -11,7 +11,7 @@
 	export let data: PageData;
 </script>
 
-<div class="flex min-h-[calc(100vh-4rem)] w-full min-w-0 max-w-full justify-center pb-8">
+<div class="flex min-h-[calc(100vh-4rem)] w-full min-w-0 max-w-full justify-center pb-8 dark:text-gray-50">
 	<main class="w-full min-w-0 max-w-4xl px-6 pt-4 md:px-8">
 		<h1 class="font-semibold mt-10 border-b pb-1 text-3xl contrast-more:border-neutral-400">
 			{data.title}
@@ -22,7 +22,7 @@
 		<img src={data.mainImage ? urlFor(data.mainImage).url() : Placeholder} alt="" />
 		{#if data.github || data.url}
 		<div
-			class="mt-6 flex rounded-lg border py-2 px-4 contrast-more:border-current border-green-200 bg-green-100 text-green-900"
+			class="mt-6 flex rounded-lg border py-2 px-4 border-green-200 dark:border-green-200/30 bg-green-100 dark:bg-green-900/30 text-green-900 dark:text-green-200"
 		>
 			<h2 class="font-semibold mr-1">Lenker:</h2>
 			{#if data.github}
@@ -34,13 +34,13 @@
 		</div>
 		{/if}
 		<div
-			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-blue-200 bg-blue-100 text-blue-900"
+			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-blue-200 dark:border-blue-200/30 bg-blue-100 dark:bg-blue-900/30 text-blue-900 dark:text-blue-200"
 		>
 			<h2 class="font-semibold mr-1">Teknologier:</h2>
 			<p>{data.technologies}</p>
 		</div>
 		<div
-			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-indigo-200 bg-indigo-100 text-indigo-900"
+			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-indigo-200 dark:border-indigo-200/30 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-900 dark:text-indigo-200"
 		>
 			<h2 class="font-semibold mr-1">Tidsperiode:</h2>
 			<p>{getDateRange(new Date(data.fromDate), new Date(data.toDate))}</p>

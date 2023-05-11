@@ -9,11 +9,11 @@
 
 {#each Object.entries(projectsByYear).reverse() as [key, value]}
 	{#if key === 'now'}
-		<h3 class="font-semibold mt-10 border-b pb-1 text-xl contrast-more:border-neutral-400">
+		<h3 class="font-semibold mt-10 border-b pb-1 text-xl">
 			Pågående prosjekter
 		</h3>
 	{:else}
-		<h3 class="font-semibold mt-10 border-b pb-1 text-xl contrast-more:border-neutral-400">
+		<h3 class="font-semibold mt-10 border-b pb-1 text-xl">
 			{key}
 		</h3>
 	{/if}

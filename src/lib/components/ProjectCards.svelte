@@ -8,7 +8,7 @@
 
 {#each prosjekter as prosjekt}
 	<a
-		class="mt-4 cursor-pointer border-solid border-[1px] border-[#eee] h-auto grid-cols-none grid md:grid-cols-[.3fr_.7fr] md:grid-rows-1 md:gap-0 md:max-h-[240px] p-[10px] rounded-md outline-offset-2 outline-2 outline-transparent"
+		class="mt-4 cursor-pointer h-auto grid-cols-none grid md:grid-cols-[.3fr_.7fr] md:grid-rows-1 md:gap-0 md:max-h-[240px] p-[10px] rounded-md outline-offset-2 outline-2 outline-transparent"
 		href={`/prosjekter/${prosjekt.slug.current}`}
 	>
 		<div class="relative w-full h-[200px] mb-[1em] md:mb-0 md:h-auto">
@@ -19,7 +19,7 @@
 			/>
 		</div>
 		<div class="flex flex-col ml-[2em] justify-around">
-			<p class="text-sm text-orange-500">{prosjekt.technologies}</p>
+			<p class="text-sm text-pink-600 font-semibold">{prosjekt.technologies}</p>
 			<h4 class="mt-3 block font-semibold text-lg">{prosjekt.title}</h4>
 			<p class="mb-3 text-md">{prosjekt.description}</p>
 			<p class="opacity-50 text-sm">{getDateRange(new Date(prosjekt.fromDate), new Date(prosjekt.toDate))}</p>

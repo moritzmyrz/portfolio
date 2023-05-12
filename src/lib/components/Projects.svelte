@@ -1,10 +1,13 @@
 <script lang="ts">
+	import dateSort from '$lib/utils/dateSort';
+
 	export let projects: any;
 
 	import { groupProjectsByYear } from '$lib/utils/groupProjectsByYear';
 	import ProjectCards from './ProjectCards.svelte';
 
-	const projectsByYear = groupProjectsByYear(projects)
+	const sortedProjects = projects.sort(dateSort);
+	const projectsByYear = groupProjectsByYear(sortedProjects)
 </script>
 
 {#each Object.entries(projectsByYear).reverse() as [key, value]}

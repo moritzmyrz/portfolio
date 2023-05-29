@@ -11,7 +11,7 @@
 >
 	<main class="w-full min-w-0 max-w-4xl px-6 pt-4 md:px-8">
 		<h1
-			class="font-semibold mt-10 border-b pb-1 text-3xl border-border-light dark:border-border-dark"
+			class="font-semibold mt-10 border-b pb-1 text-3xl contrast-more:border-neutral-400"
 		>
 			Hei! Jeg er Moritz Myrseth
 		</h1>

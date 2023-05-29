@@ -1,5 +1,5 @@
-<script lang='ts'>
-  export let prosjekter: any;
+<script lang="ts">
+	export let prosjekter: any;
 
 	import Placeholder from '$lib/assets/placeholder.jpg';
 	import { getDateRange } from '$lib/utils/getDateRange';
@@ -22,7 +22,9 @@
 			<p class="text-sm text-pink-600 font-semibold">{prosjekt.technologies}</p>
 			<h4 class="mt-3 block font-semibold text-lg">{prosjekt.title}</h4>
 			<p class="mb-3 text-md">{prosjekt.description}</p>
-			<p class="opacity-50 text-sm">{getDateRange(new Date(prosjekt.fromDate), new Date(prosjekt.toDate))}</p>
+			<p class="opacity-50 text-sm">
+				{getDateRange(new Date(prosjekt.fromDate), new Date(prosjekt.toDate))}
+			</p>
 		</div>
 	</a>
 {/each}

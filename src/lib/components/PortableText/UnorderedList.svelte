@@ -1,11 +1,11 @@
 <script lang="ts">
-  import type { ListComponentProps } from '@portabletext/svelte';
+	import type { ListComponentProps } from '@portabletext/svelte';
 
-  export let portableText: ListComponentProps;
+	export let portableText: ListComponentProps;
 
-  $: ({value} = portableText);
+	$: ({ value } = portableText);
 </script>
 
 <ul class="list-style-type: a">
-  <slot />
+	<slot />
 </ul>

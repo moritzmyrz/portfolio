@@ -6,9 +6,13 @@
 	export let data: PageData;
 </script>
 
-<div class="flex min-h-[calc(100vh-4rem)] w-full min-w-0 max-w-full justify-center pb-8 dark:text-gray-50">
+<div
+	class="flex min-h-[calc(100vh-4rem)] w-full min-w-0 max-w-full justify-center pb-8 dark:text-gray-50"
+>
 	<main class="w-full min-w-0 max-w-4xl px-6 pt-4 md:px-8">
-		<h1 class="font-semibold mt-10 border-b pb-1 text-3xl border-border-light dark:border-border-dark">
+		<h1
+			class="font-semibold mt-10 border-b pb-1 text-3xl border-border-light dark:border-border-dark"
+		>
 			Hei! Jeg er Moritz Myrseth
 		</h1>
 		<p class="mt-6 leading-7 first:mt-0">

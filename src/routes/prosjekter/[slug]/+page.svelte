@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Placeholder from '$lib/assets/placeholder.jpg';
+	import BlockText from '$lib/components/PortableText/BlockText.svelte';
 	import Image from '$lib/components/PortableText/Image.svelte';
 	import { getDateRange } from '$lib/utils/getDateRange';
 	import { urlFor } from '$lib/utils/image';
@@ -18,13 +19,13 @@
 	class="flex min-h-[calc(100vh-4rem)] w-full min-w-0 max-w-full justify-center pb-8 dark:text-gray-50"
 >
 	<main class="w-full min-w-0 max-w-4xl px-6 pt-4 md:px-8">
-		<h1 class="font-semibold mt-10 border-b pb-1 text-3xl contrast-more:border-neutral-400">
+		<h1 class="font-semibold mt-10 border-b pb-1 text-3xl contrast-more:border-neutral-400 leading-7 [&:not(:first-child)]:mt-6">
 			{data.title}
 		</h1>
-		<div class="my-3 leading-7 first:mt-0">
+		<div class="leading-7 [&:not(:first-child)]:mt-6">
 			{data.description}
 		</div>
-		<img src={data.mainImage ? urlFor(data.mainImage).url() : Placeholder} alt="" />
+		<img src={data.mainImage ? urlFor(data.mainImage).url() : Placeholder} alt={`${data.title} cover image`} width="832" height="560" class="mt-3" />
 		{#if data.github || data.url}
 			<div
 				class="mt-6 flex rounded-lg border py-2 px-4 border-green-200 dark:border-green-200/30 bg-green-100 dark:bg-green-900/30 text-green-900 dark:text-green-200"
@@ -57,6 +58,9 @@
 				components={{
 					types: {
 						image: Image
+					},
+					block: {
+						normal: BlockText
 					}
 				}}
 			/>

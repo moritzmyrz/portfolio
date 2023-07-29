@@ -28,7 +28,7 @@
 		<img src={data.mainImage ? urlFor(data.mainImage).url() : Placeholder} alt={`${data.title} cover image`} width="832" height="560" class="mt-3" />
 		{#if data.github || data.url}
 			<div
-				class="mt-6 flex rounded-lg border py-2 px-4 border-green-200 dark:border-green-200/30 bg-green-100 dark:bg-green-900/30 text-green-900 dark:text-green-200"
+				class="mt-6 flex flex-col md:flex-row rounded-lg border py-2 px-4 border-green-200 dark:border-green-200/30 bg-green-100 dark:bg-green-900/30 text-green-900 dark:text-green-200"
 			>
 				<h2 class="font-semibold mr-1">Lenker:</h2>
 				{#if data.github}
@@ -40,13 +40,13 @@
 			</div>
 		{/if}
 		<div
-			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-blue-200 dark:border-blue-200/30 bg-blue-100 dark:bg-blue-900/30 text-blue-900 dark:text-blue-200"
+			class="mt-2 flex flex-col md:flex-row rounded-lg border py-2 px-4 contrast-more:border-current border-blue-200 dark:border-blue-200/30 bg-blue-100 dark:bg-blue-900/30 text-blue-900 dark:text-blue-200"
 		>
 			<h2 class="font-semibold mr-1">Teknologier:</h2>
 			<p>{data.technologies}</p>
 		</div>
 		<div
-			class="mt-2 flex rounded-lg border py-2 px-4 contrast-more:border-current border-indigo-200 dark:border-indigo-200/30 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-900 dark:text-indigo-200"
+			class="mt-2 flex flex-col md:flex-row rounded-lg border py-2 px-4 contrast-more:border-current border-indigo-200 dark:border-indigo-200/30 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-900 dark:text-indigo-200"
 		>
 			<h2 class="font-semibold mr-1">Tidsperiode:</h2>
 			<p>{getDateRange(new Date(data.fromDate), new Date(data.toDate))}</p>

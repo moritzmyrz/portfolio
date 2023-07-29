@@ -5,6 +5,6 @@
 	export let portableText: BlockComponentProps;
 </script>
 
-<div class="mt-2">
+<div class="leading-7 [&:not(:first-child)]:mt-6">
 	<slot />
 </div>

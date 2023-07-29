@@ -18,7 +18,7 @@
 		<p class="mt-6 leading-7 first:mt-0">
 			Jeg er en webutvikler med erfaring primært innen JavaScript, React og Microsoft Azure. Jeg er
 			interessert i å lære og utvikle meg i teknologibransjen, og liker å holde meg oppdatert på nye
-			teknologier på fritiden.
+			teknologier på fritiden. For øyeblikket går jeg dataingeniørstudiet på OsloMet.
 		</p>
 		<div class="h-[50px]" />
 		<h2 class="font-semibold mt-10 border-b pb-1 text-2xl contrast-more:border-neutral-400">
